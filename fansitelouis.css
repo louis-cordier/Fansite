@@ -1,0 +1,92 @@
+#hamburger, #hamburger-logo{
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    overflow: hidden;
+    margin: -10px -10px 0 -10px;
+
+    /* Pour que les liens soient "rangés" par défaut */
+
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    text-align: end;
+}
+
+
+@media (max-width:768px){
+    
+    *{
+        /* Pour que les tailles soient correctes */
+        box-sizing: border-box;
+    }
+    
+    body {
+        /* Pour coller le menu au bord, sans espace */
+        margin: 0;
+    }
+    
+    .menu {
+        /* Pour que le menu reste en place quand on scroll */
+        position: fixed;
+        /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+        width: 0px;
+    }
+    
+    #hamburger {
+        /* Pour que la checkbox ne s'affiche pas */
+        display: none;
+    }
+    
+    #hamburger-logo {
+        /* Pour que le curseur soit un pointeur */
+        cursor: pointer;
+        background: black;
+        width: 150px;
+        display: block;
+        color: white;
+        /* Pour que le menu hamburger s'affiche toujours */
+        text-align: right;
+        /* Pour que le menu hamburger soit "rangé" par défaut */
+        transform: translateX(-120px);
+        padding: 10px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        overflow: hidden;
+        width: 160px;
+        /* Pour que les liens soient "rangés" par défaut */
+        transform: translateX(-200px);
+    }
+    
+    #hamburger-logo,
+    nav {
+        /* Pour qu'il y ait une animation */
+        transition: 1.2s;
+    }
+    
+    /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+    #hamburger:checked ~ #hamburger-logo,
+    #hamburger:checked ~ nav {
+        /* Changement de la position pour afficher les menus */
+        transform: translate(0);
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        text-align: end;
+    }
+    
+}
