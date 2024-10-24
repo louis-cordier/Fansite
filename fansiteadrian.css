@@ -11,13 +11,12 @@ html,body{
 *{
     /* Pour que les tailles soient correctes */
     box-sizing: border-box;
-
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image:url("Images/backgroundTarnAdams.png") ;
+    background-image:url("images/backTarnAdams.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -118,7 +117,7 @@ nav a {
     flex-flow: column nowrap;
     justify-content: center;
     background-color: rgb(86, 84, 88);
-    margin: 100px;
+    margin: 5% 5% 5% 5%;
     padding: 20px;
     border: solid black;
 }
@@ -127,9 +126,6 @@ nav a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-   
-
-  
 
     h1, h2{
         text-align: center;
@@ -137,12 +133,21 @@ nav a {
     }
 
     img{
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
         align-self: center;
         margin: 20px 0 20px 0;
         border: solid black;
+
+        @media (min-width:1080px) {
+            width: 25%;
+            height:25%;
+            
+        }
+
     }
+
+    
 }
     .mosaiqueImages{
         display: flex;
@@ -152,6 +157,7 @@ nav a {
         .mosaiqueImagesLine{
             display: flex;
             flex-flow: row wrap;
+            justify-content: space-evenly;
 
         }
 
@@ -160,13 +166,14 @@ nav a {
                 width: 120px;
                 height: 120px;
                 margin: 5px;
+                
             
             }
 
             img:hover{
                 transition: 800ms;
-                width: 300px;
-                height: 300px;
+                width: 150px;
+                height: 150px;
             }
     }
 

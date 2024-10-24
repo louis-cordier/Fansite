@@ -1,0 +1,51 @@
+
+:root{
+    --prime: #3B1E54;
+    --second: #9B7EBD;
+    --third: #D4BEE4;
+    --last: #EEEEEE;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--prime);
+}
+
+header{
+    background-color:var(--second);
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 50px;
+    margin: 10px;
+    
+    a{
+        font-size: large;
+    }
+}
+
+.containerGlobal{
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    background-color: var(--third);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.titreSousTitre{
+    text-align: center;
+}
