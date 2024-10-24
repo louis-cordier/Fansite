@@ -1,27 +1,6 @@
-#hamburger, #hamburger-logo{
-    display: none;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    background: black;
-    overflow: hidden;
-    margin: -10px -10px 0 -10px;
-
-    /* Pour que les liens soient "rangés" par défaut */
-
-}
-
-nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 20px 20px 20px 20px;
-    text-align: end;
-}
-
-
-@media (max-width:768px){
+/* -------------------------------------------- */
+/* ------------- NAV BAR ---------------------- */
+/* -------------------------------------------- */
     
     *{
         /* Pour que les tailles soient correctes */
@@ -55,7 +34,7 @@ nav a {
         /* Pour que le menu hamburger s'affiche toujours */
         text-align: right;
         /* Pour que le menu hamburger soit "rangé" par défaut */
-        transform: translateX(-120px);
+        transform: translateX(-115px);
         padding: 10px;
     }
     
@@ -64,7 +43,7 @@ nav a {
         flex-direction: column;
         background: black;
         overflow: hidden;
-        width: 160px;
+        width: 150px;
         /* Pour que les liens soient "rangés" par défaut */
         transform: translateX(-200px);
     }
@@ -89,4 +68,63 @@ nav a {
         text-align: end;
     }
     
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* -------------MAIN CONTENT------------------- */
+/* -------------------------------------------- */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding:0 20% 0 20%;
+    background-color: rgba(113, 131, 178, 0.382);
+    font-family:cursive;
+}
+
+.ContainerH1 {
+    text-align: center;
+    background-color: rgba(8, 8, 57, 0.082);
+    margin: 20px;   
+
+    H1 {
+        font-size: 68px;
+    }
+    section {
+        margin-top: 20px;
+        padding:0 30% 10% 30%;
+    }
+}
+.logo {
+width: 50px;
+height: 50px;
+}
+
+.ContainerH2 {
+    margin: 20px;
+    text-align: center;
+
+    background-color: rgba(8, 8, 57, 0.082);
+   h2 {
+        color: rgb(81, 52, 230);
+    }
+    
+}
+.ContainerFooter{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    .logo{
+        margin-right: 30px;
+        margin-bottom: 15px;
+        background-color: white;
+    }
+}
+footer{
+    background-color: rgba(166, 180, 216, 0.382);
+
 }
