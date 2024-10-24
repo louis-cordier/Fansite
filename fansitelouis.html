@@ -19,32 +19,31 @@
                 <label id="hamburger-logo" for="hamburger">☰</label>
                 <!-- Le reste du menu -->
                 <nav>
-                
+                  <a href="#Haut de page">Haut de page</a>  
                   <a href="#actu">Actualités</a>
                   <a href="#réal">Réalisations</a>
                   <a href="#bio">Biographie</a>
-                  <a href="#events">Evènements passés\à venir</a>
+                  <a href="#events">Evènements passés/à venir</a>
                   <a href="#pic">Photos et vidéos</a>
-                  <a href="#fanlink">Liens sites fans</a>
-                  <a href="#link">Liens réseaux sociaux</a>"
-                  <a href="#contact">Formulaire de contact</a>
+                  <a href="#fanlink">Liens sites fans et réseaux sociaux</a>
                 </nav>
             </div>
         </div>            
     </header>
-        <!------- FIN HEADER STOP - ADD ID APRES LES #---------->
+        <!------- FIN HEADER STOP - ADD ID APRES LES # - DONE---------->
     <main>
         <!-- Contenu général du site-->
 
         <section class="ContainerH1">
-           <h1>Kygo</h1>
+            <!--TITRE PRINCIPAL-->
+           <h1 id="Haut de page">Kygo</h1>
            <img src="images/Kygo_1.jpg"/>
             <section>
                 Kygo est un DJ mondialement connu, qui compose des morceaux et fait des remix dans un style bien particulier :
                 la tropical house.
             </section>
         </section>    
-
+        <!-- Ensemble des titres h2 + texte-->
         <section class="ContainerH2">
             <h2 id="actu">Actualités</h2>
              <section>
@@ -82,17 +81,35 @@
                 Kygo a déjà produit cinq albums et réalisés 34 remixes.
                 Sa musique est écoutée par plus de 30 millions d'écouteurs mensuels sur Spotify. 
                 Il continue sa tournée Kygo World Tour en Europe à partir de Décembre 2024.
+                <image id="Events" src="images/event-kygo.png" alt="concerts à venir">
 
              </section>
          </section>
 
          <section class="ContainerH2">
             <h2 id="pic">Photos et vidéos</h2>
+            <!-- Incrémentation d'un lecteur vidéo Youtube-->
              <section>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/d0lWAcYlXHE?si=JUXbn-YvxeQbPmAk" title="YouTube video player" 
                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Kygo - Love me now feat Zoe Wess (lyrics)</iframe>
-                
+             </section>
+
+         </section>
+        <!-- Insertion de plusieurs images en mosaïque-->
+        <section class="mosaiqueImages">
+            <section class="mosaiqueImagesLine">
+                    <img src="images/kygo_2.jpg" alt="Photo Kygo">
+                    <img src="images/kygo_5.jpg" alt="Photo Kygo">
+            </section>
+            <section class="mosaiqueImagesLine">
+                    <img src="images/kygo_6.jpg" alt="Photo Kygo">
+                    <img src="images/kygo_8.jpg" alt="Photo Kygo">
+            </section>
+
+
+
+
              </section>
          </section>
 
@@ -100,7 +117,7 @@
     </main>
 
     <footer>
-        <!-- liens à ajouter en bas de page-->
+        <!-- liens de bas de page vers fanpage et réseaux sociaux de Kygo-->
 
          <section class="ContainerFooter">
             <h2 id="fanlink">Liens sites fans et réseaux sociaux</h2>

@@ -81,21 +81,29 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     padding:0 20% 0 20%;
-    background-color: rgba(113, 131, 178, 0.382);
+    background-color: rgba(179, 189, 213, 0.467);
     font-family:cursive;
+    background-image: url("images/background_site.jpg");
+    background-size:contain
 }
-
 .ContainerH1 {
     text-align: center;
-    background-color: rgba(8, 8, 57, 0.082);
-    margin: 20px;   
+    background-color:none;
+    margin: 20px;     
+    opacity: 0.9;
+    padding: 0 20% 0 20%;
+   
 
     H1 {
         font-size: 68px;
+        color: rgb(39, 5, 151);
     }
     section {
+        font-size:20px;
         margin-top: 20px;
-        padding:0 30% 10% 30%;
+        padding:10% 10% 10% 10%;
+        background-color: white;
+        opacity: 0.8;
     }
 }
 .logo {
@@ -107,7 +115,7 @@ height: 50px;
     margin: 20px;
     text-align: center;
 
-    background-color: rgba(8, 8, 57, 0.082);
+    background-color: rgba(226, 207, 207, 0.778);
    h2 {
         color: rgb(81, 52, 230);
     }
@@ -127,4 +135,27 @@ height: 50px;
 footer{
     background-color: rgba(166, 180, 216, 0.382);
 
+}
+
+.mosaiqueImages{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.mosaiqueImagesLine{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+         width: 200px;
+         height: 200px;  
+        margin: 5px;
+    }
+}
+#Events{
+    width:500px;
+    height:500px;
 }
