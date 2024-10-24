@@ -1,37 +1,4 @@
-:root{
-    --couleurPrime: #ffffff;
-    --couleurBeta:  #ffffff;
-    /*pour utliser les var : var(--nomdelavariable)*/
-}
-
-html,body{
-    /* height: 100vh; */
-    margin: 0;
-}
-*{
-    /* Pour que les tailles soient correctes */
-    box-sizing: border-box;
-
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-image:url("Images/backgroundTarnAdams.png") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-footer{
-    background-color: white;
-    align-self: flex-end;
-    width: 100%;
-}
-
-
-/* ------------ Burger Bouton ------------ */
-
+/* css du burger button et menu : nav bar générale du site */
 #hamburger, #hamburger-logo{
     display: none;
 }
@@ -53,6 +20,19 @@ nav a {
     padding: 20px 20px 20px 20px;
     text-align: end;
 }
+
+
+
+    
+    *{
+        /* Pour que les tailles soient correctes */
+        box-sizing: border-box;
+    }
+    
+    body {
+        /* Pour coller le menu au bord, sans espace */
+        margin: 0;
+    }
     
     .menu {
         /* Pour que le menu reste en place quand on scroll */
@@ -76,7 +56,7 @@ nav a {
         /* Pour que le menu hamburger s'affiche toujours */
         text-align: right;
         /* Pour que le menu hamburger soit "rangé" par défaut */
-        transform: translateX(-115px);
+        transform: translateX(-120px);
         padding: 10px;
     }
     
@@ -109,81 +89,108 @@ nav a {
         padding: 10px;
         text-align: end;
     }
+    
 
-/* ------------ ------ ------------ */
+/* -----------------fin nav bar et burger menu-------------- */
 
-.containerGlobal{
-
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    background-color: rgb(86, 84, 88);
-    margin: 100px;
-    padding: 20px;
-    border: solid black;
-}
-
-.containerTitreTexte{
+.bigContainer{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-   
+    align-items: center;
+    justify-content: space-around;
 
-  
+    background-color: rebeccapurple;
+    margin: 20px;
 
-    h1, h2{
-        text-align: center;
-        font-weight: 900;
+}
+
+.containerh1h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgb(37, 37, 212);
+    margin: 20px;
+
+    h1 {
+        font-family: cambria;
+        font-size: 30px;
+        color: rgb(122, 177, 225);
     }
 
     img{
-        width: 50%;
-        height: 50%;
-        align-self: center;
-        margin: 20px 0 20px 0;
-        border: solid black;
+        width: 200px;
+        height: 145px;
+    }
+
+    h2{
+        font-size: 15px;
+        color: rgb(143, 143, 209);
+        padding: 10px;
     }
 }
-    .mosaiqueImages{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
 
-        .mosaiqueImagesLine{
-            display: flex;
-            flex-flow: row wrap;
-
-        }
-
-            img{
-            
-                width: 120px;
-                height: 120px;
-                margin: 5px;
-            
-            }
-
-            img:hover{
-                transition: 800ms;
-                width: 300px;
-                height: 300px;
-            }
-    }
-
-footer{
-    background-color: black;
-    border: solid 2px white;
+.description {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    
-}   
+    justify-content: space-around;
 
-.icon{
-    width: 50px;
-    height: 50px;
-    margin:20px 0 20px 0;
+    background-color: rgb(133, 133, 242);
+    padding: 10px;
+    margin: 20px;
 }
-    
+
+/* MOSAIC layout */
+
+.mosaic{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 95%;
+    /* justify-content: center; */
+}
+ 
+.tiles {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+
+    img {
+        margin: 0 0 5% 0;
+        
+    }
+
+    .category {
+        
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    color: #eaf3f6;
+    }
+}
+
+.containerh3 {
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+
+    background-color: rgb(140, 163, 237);
+    color: rgb(16, 47, 50);
+    margin: 20px;
+    padding: 10px;
+
+    img {
+        width: 80%;
+        height: 75%;
+        padding: 10px; 
+    }
+}
+
+.subimage{
+    font-size: small;
+}
