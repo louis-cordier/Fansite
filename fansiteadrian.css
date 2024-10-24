@@ -1,0 +1,189 @@
+:root{
+    --couleurPrime: #ffffff;
+    --couleurBeta:  #ffffff;
+    /*pour utliser les var : var(--nomdelavariable)*/
+}
+
+html,body{
+    /* height: 100vh; */
+    margin: 0;
+}
+*{
+    /* Pour que les tailles soient correctes */
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image:url("Images/backgroundTarnAdams.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    background-color: white;
+    align-self: flex-end;
+    width: 100%;
+}
+
+
+/* ------------ Burger Bouton ------------ */
+
+#hamburger, #hamburger-logo{
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    overflow: hidden;
+    margin: -10px -10px 0 -10px;
+
+    /* Pour que les liens soient "rangés" par défaut */
+
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    text-align: end;
+}
+    
+    .menu {
+        /* Pour que le menu reste en place quand on scroll */
+        position: fixed;
+        /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+        width: 0px;
+    }
+    
+    #hamburger {
+        /* Pour que la checkbox ne s'affiche pas */
+        display: none;
+    }
+    
+    #hamburger-logo {
+        /* Pour que le curseur soit un pointeur */
+        cursor: pointer;
+        background: black;
+        width: 150px;
+        display: block;
+        color: white;
+        /* Pour que le menu hamburger s'affiche toujours */
+        text-align: right;
+        /* Pour que le menu hamburger soit "rangé" par défaut */
+        transform: translateX(-115px);
+        padding: 10px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        overflow: hidden;
+        width: 160px;
+        /* Pour que les liens soient "rangés" par défaut */
+        transform: translateX(-200px);
+    }
+    
+    #hamburger-logo,
+    nav {
+        /* Pour qu'il y ait une animation */
+        transition: 1.2s;
+    }
+    
+    /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+    #hamburger:checked ~ #hamburger-logo,
+    #hamburger:checked ~ nav {
+        /* Changement de la position pour afficher les menus */
+        transform: translate(0);
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        text-align: end;
+    }
+
+/* ------------ ------ ------------ */
+
+.containerGlobal{
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: rgb(86, 84, 88);
+    margin: 100px;
+    padding: 20px;
+    border: solid black;
+}
+
+.containerTitreTexte{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+   
+
+  
+
+    h1, h2{
+        text-align: center;
+        font-weight: 900;
+    }
+
+    img{
+        width: 50%;
+        height: 50%;
+        align-self: center;
+        margin: 20px 0 20px 0;
+        border: solid black;
+    }
+}
+    .mosaiqueImages{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        .mosaiqueImagesLine{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+            img{
+            
+                width: 120px;
+                height: 120px;
+                margin: 5px;
+            
+            }
+
+            img:hover{
+                transition: 800ms;
+                width: 300px;
+                height: 300px;
+            }
+    }
+
+footer{
+    background-color: black;
+    border: solid 2px white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}   
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin:20px 0 20px 0;
+}
+    
