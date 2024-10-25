@@ -1,3 +1,17 @@
+:root{
+    --primary: #032F60;
+    --secondary: #AADBF9;
+    --darkemerald: #234B4D;
+    --mediumemerald: #168283;
+    --clearemerald: #168183;
+    --writting: #DBE3E3;
+    --lightblue: #4DC6EB;
+}
+   
+
+
+
+
 /* css du burger button et menu : nav bar générale du site */
 #hamburger, #hamburger-logo{
     display: none;
@@ -20,9 +34,6 @@ nav a {
     padding: 20px 20px 20px 20px;
     text-align: end;
 }
-
-
-
     
     *{
         /* Pour que les tailles soient correctes */
@@ -92,14 +103,16 @@ nav a {
     
 
 /* -----------------fin nav bar et burger menu-------------- */
-
+#grad1 {
+    background-image: linear-gradient(to bottom right, #234B4D, #168283, #168183,#DBE3E3)
+}
 .bigContainer{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-
-    background-color: rebeccapurple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: rebeccapurple; */
     margin: 20px;
 
 }
@@ -110,13 +123,13 @@ nav a {
     align-items: center;
     justify-content: space-around;
 
-    background-color: rgb(37, 37, 212);
+    color:var(--writting);
+    background-color:var(--primary);
     margin: 20px;
 
     h1 {
-        font-family: cambria;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 30px;
-        color: rgb(122, 177, 225);
     }
 
     img{
@@ -125,8 +138,8 @@ nav a {
     }
 
     h2{
+        font-family:Gill Sans 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
-        color: rgb(143, 143, 209);
         padding: 10px;
     }
 }
@@ -137,9 +150,13 @@ nav a {
     align-items: center;
     justify-content: space-around;
 
-    background-color: rgb(133, 133, 242);
+    background-color:var(--clearemerald);
     padding: 10px;
     margin: 20px;
+}
+
+#grad3 {
+    background-image: linear-gradient(to bottom left, #234B4D, #168283, #168183,#DBE3E3)
 }
 
 /* MOSAIC layout */
@@ -157,10 +174,10 @@ nav a {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 95%;
+    width: 110%;
 
     img {
-        margin: 0 0 5% 0;
+        margin: 0 0 3% 0;
         
     }
 
@@ -169,28 +186,32 @@ nav a {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
-    color: #eaf3f6;
+    color:var(--writting);
     }
 }
 
 .containerh3 {
+    
+    text-justify: distribute;
+    
     display: flex;
     flex-flow: row wrap;
     /* align-items: center; */
     justify-content: space-around;
 
-    background-color: rgb(140, 163, 237);
-    color: rgb(16, 47, 50);
+    background-color:var(--secondary);
+    color:var(--primary);
     margin: 20px;
     padding: 10px;
 
     img {
-        width: 80%;
-        height: 75%;
+        width: 100%;
+        height: 85%;
         padding: 10px; 
     }
 }
 
 .subimage{
+    text-align: start;
     font-size: small;
 }
