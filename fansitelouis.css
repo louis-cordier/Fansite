@@ -109,6 +109,7 @@ main {
         padding:10% 10% 10% 10%;
         background-color: white;
         opacity: 0.8;
+        
     }
 }
 
@@ -123,6 +124,9 @@ main {
         color: rgb(81, 52, 230);
     }
     
+}
+.lecteurspotify{
+    opacity: 0.85;
 }
 
 /* Règles pour la disposition des images - mosaïque */
@@ -158,6 +162,13 @@ main {
         height: 80%;
         margin-left: 10%;
     }
+}
+/* Changement de la couleur par l'ID */
+#events{
+    color: rgb(81, 52, 230);
+}
+#pic{
+    color: rgb(81, 52, 230);
 }
 /* Elements de mise en page pour l'incrustation vidéo */
 .videoContainer{
@@ -203,12 +214,18 @@ footer{
 .ContainerFooter{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
 
     .logo{
        margin: 20px;
         background-color: white;
+        justify-content: center;
     }
+ 
 }     
+.fanlink{
+    text-align: center;
+   
+}
