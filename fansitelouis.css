@@ -5,6 +5,7 @@
     *{
         /* Pour que les tailles soient correctes */
         box-sizing: border-box;
+
     }
     
     body {
@@ -76,16 +77,20 @@
 /* -------------------------------------------- */
 /* -------------MAIN CONTENT------------------- */
 /* -------------------------------------------- */
+
+
+/* Selection caractéristiques principales de la page */
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding:0 20% 0 20%;
+    padding:0 5% 0 5%;
     background-color: rgba(179, 189, 213, 0.467);
     font-family:cursive;
     background-image: url("images/background_site.jpg");
     background-size:contain
 }
+/* Elements de mise en page du titre et de l'image */
 .ContainerH1 {
     text-align: center;
     background-color:none;
@@ -104,12 +109,11 @@ main {
         padding:10% 10% 10% 10%;
         background-color: white;
         opacity: 0.8;
+        
     }
 }
-.logo {
-width: 50px;
-height: 50px;
-}
+
+/* Eléments de mise en page pour les sous-titres et leur section */
 
 .ContainerH2 {
     margin: 20px;
@@ -121,22 +125,11 @@ height: 50px;
     }
     
 }
-.ContainerFooter{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-    .logo{
-        margin-right: 30px;
-        margin-bottom: 15px;
-        background-color: white;
-    }
-}
-footer{
-    background-color: rgba(166, 180, 216, 0.382);
-
+.lecteurspotify{
+    opacity: 0.85;
 }
 
+/* Règles pour la disposition des images - mosaïque */
 .mosaiqueImages{
     display: flex;
     flex-flow: column nowrap;
@@ -155,7 +148,84 @@ footer{
         margin: 5px;
     }
 }
-#Events{
-    width:500px;
-    height:500px;
+/* Paramétrage éléments textuels et photo pour la section actualités */
+.Containeractualités{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:space-between;
+    background-color:rgb(255, 255, 255, 0.6) ;
+
+    img{
+       
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+    }
+}
+/* Changement de la couleur par l'ID */
+#events{
+    color: rgb(81, 52, 230);
+}
+#pic{
+    color: rgb(81, 52, 230);
+}
+/* Elements de mise en page pour l'incrustation vidéo */
+.videoContainer{
+
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ceci correspond à un ratio 16:9 (hauteur/largeur = 9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+        
+    
+}
+.videoContainer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+/* Elements de taille logos */
+.logo {
+    width: 50px;
+    height: 50px;
+        }
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* -------------------FOOTER------------------- */
+/* -------------------------------------------- */
+
+footer{
+        background-color: rgba(166, 180, 216, 0.382);
+    
+    }
+
+.ContainerFooter{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+
+    .logo{
+       margin: 20px;
+        background-color: white;
+        justify-content: center;
+    }
+ 
+}     
+.fanlink{
+    text-align: center;
+   
 }
