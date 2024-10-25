@@ -6,20 +6,26 @@
     --last: #EEEEEE;
 }
 
-
+img{
+    width: var(--nombre);
+}
 
 *{
     box-sizing: border-box;
 }
 
 body{
+
     margin: 0;
     padding: 0;
-    background-color: var(--prime);
+    background-color: var(--second) ;
 }
 
 header{
-    background-color:var(--second);
+
+    background-color:var(--third);
+    width: 100%;
+    height: 80px;
 }
 
 nav{
@@ -28,9 +34,10 @@ nav{
     align-items: center;
 
     height: 50px;
-    margin: 10px;
+    
     
     a{
+        
         font-size: large;
     }
 }
@@ -48,4 +55,83 @@ nav{
 
 .titreSousTitre{
     text-align: center;
+    
+    h1{
+        font-size: 52px;
+        font-weight: bold;
+    }
+
+    p{
+        font-style: italic;
+        font-size: 28px;
+    }
+}
+
+.introTexte{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    margin: 25px;
+
+    img {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+.introTexteBis{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 5%;
+
+    background-color: var(--second);
+    padding: 5%;
+    border-radius: 5%;
+    border: solid var(--prime);
+
+}
+
+.vignettes{
+
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    
+
+    margin-top: 25px;
+}
+
+.vignettesCase{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+
+        img{
+            margin-top: 25px;
+            width: 75%;
+            height: 75%;
+        }
+    
+    
+    
+    
+
+
+}
+
+.vignettesTexte{
+
+    margin: 15px;
+    
+
+
+    background-color: var(--second);
+    padding: 5%;
+    border-radius: 5%;
+    border: solid var(--prime);
 }
