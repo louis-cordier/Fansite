@@ -1,29 +1,40 @@
 
 :root{
-    --prime: #3B1E54;
-    --second: #9B7EBD;
-    --third: #D4BEE4;
-    --last: #EEEEEE;
+    --prime: #EFFFFB;
+    --second: #272727;
+    --third: #ffffff;
+    --last: #272727;
 }
 
 img{
-    width: var(--nombre);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 *{
     box-sizing: border-box;
 }
 
+p, h1, h2, h3{
+    color: white;
+}
+
 body{
 
     margin: 0;
     padding: 0;
-    background-color: var(--second) ;
+    background-color: var(--prime) ;
 }
 
 header{
 
-    background-color:var(--third);
+    background-color:var(--prime);
+    width: 100%;
+    height: 80px;
+}
+
+footer{
+    background-color:var(--last);
     width: 100%;
     height: 80px;
 }
@@ -32,13 +43,20 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--last);
 
     height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
     
     a{
-        
+        color: white;
         font-size: large;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgb(85, 85, 234);
     }
 }
 
@@ -46,25 +64,47 @@ nav{
     display: flex;
     flex-flow: column nowrap;
 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
     background-color: var(--third);
     margin: 5%;
     padding: 5%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .titreSousTitre{
     text-align: center;
     
-    h1{
-        font-size: 52px;
-        font-weight: bold;
-    }
+    
+    
+    
+        h1 {
+            font-family: 'Untitled Serif';
+            font-size: 100px;
+            line-height: 98px;
+            font-weight: 400;
 
-    p{
-        font-style: italic;
-        font-size: 28px;
-    }
+            background-color: var(--second);
+            margin-right: 25%;
+            margin-left: 25%;
+
+            border-radius:10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
+        }
+    
+
+        p{
+            color: black;
+            margin-top: -80px;
+            font-style: italic;
+            font-size: 28px;
+        }
+
 }
 
 .introTexte{
@@ -72,10 +112,15 @@ nav{
     flex-flow: row nowrap;
     text-align: center;
     margin: 25px;
+    font-size: larger;
+
+    
 
     img {
         width: 275px;
         height: 275px;
+        border: none;
+        box-shadow: none;
     }
 }
 
@@ -83,11 +128,11 @@ nav{
     display: flex;
     flex-flow: column nowrap;
     margin-left: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     background-color: var(--second);
     padding: 5%;
-    border-radius: 5%;
-    border: solid var(--prime);
+    border-radius:10px;
 
 }
 
@@ -97,10 +142,15 @@ nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
-    
-
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 25px;
+    border-radius: 20px;
+
+    a:hover{
+        transition: 600ms;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
 }
 
 .vignettesCase{
@@ -110,16 +160,15 @@ nav{
     align-items: center;
     justify-content: space-around;
 
+    
+
 
         img{
             margin-top: 25px;
             width: 75%;
             height: 75%;
         }
-    
-    
-    
-    
+
 
 
 }
@@ -127,11 +176,30 @@ nav{
 .vignettesTexte{
 
     margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 
 
     background-color: var(--second);
     padding: 5%;
-    border-radius: 5%;
-    border: solid var(--prime);
+    border-radius: 10px;
+}
+
+.footerIndex{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+
+    a{
+    color: white;
+
+        margin: 10px;
+        font-size: larger;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgb(85, 85, 234);
+    }
 }
