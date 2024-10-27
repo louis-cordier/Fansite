@@ -99,8 +99,9 @@ nav a {
     
 
 /* -----------------fin nav bar et burger menu-------------- */
-#grad1 {
+.grad1 {
     background-image: linear-gradient(to bottom right, #234B4D, #168283, #168183,#DBE3E3)
+    
 }
 .bigContainer{
     display: flex;
@@ -108,9 +109,6 @@ nav a {
     align-items: center;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-color: rebeccapurple; */
-    margin: 20px;
-
 }
 
 .containerh1h2 {
@@ -122,6 +120,7 @@ nav a {
     color:var(--writting);
     background-color:var(--primary);
     margin: 20px;
+    padding: 1rem;
 
     h1{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -202,7 +201,7 @@ nav a {
     h4{
         text-align: left;
     }
-    
+
     text-justify: distribute;
         /* align-items: center; */
     justify-content: space-around;
@@ -236,7 +235,6 @@ nav a {
     height: 0;
     overflow: hidden;
         
-    
 }
 
 .videoContainer iframe{
@@ -246,3 +244,50 @@ nav a {
     width: 100%;
     height: 100%;
     }
+
+.pageFormat {
+  padding: 10px; 
+  color:var(--writting); 
+}
+
+
+/* ------- Footer liens site BBC etc, matching Louis'------ */
+
+footer{
+    background-color: var(--clearemerald);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+
+@media screen and (max-width:800px) {
+
+    .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 35%;
+        margin:20px 0 20px 0;
+    }     
+    
+}
+
+@media screen and (min-width:801px) {
+
+    .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 35%;
+        margin:20px 0 20px 0;
+    }     
+    
+}
+

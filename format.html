@@ -6,48 +6,102 @@
     <link href="fansiteKalyane.css" rel="stylesheet">
     <title>Format Only Connect</title>
 </head>
+
 <body>
-   
+    <!-- nav bar principale de notre site -- ajout du burger d'Adrian qui sera sur tout le site-->
+    <header> 
 
-<h1>Format</h1>  
+        <div class="menu">
+            <!-- Utilisation d'une checkbox -->
+            <input type="checkbox" id="hamburger">
+            <!-- Label de la checkbox -->
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <!-- Le reste du menu -->
+            <nav>
+              <a href="/">Accueil</a>
+              <!-- / est le dossier racine donc l'accueil -->
+              <a href="/fansiteadrian.html">Tarn Adams</a>
+              <a href="/fansitelouis.html">Kygo</a>
+              <a href="/">Contact</a>
+            </nav>
 
-<h2>Concept du Jeu</h2>
+        </div>   
+    </header>
 
-"Only Connect" est un quiz télévisé britannique où deux équipes s'affrontent pour identifier des connexions entre des éléments apparemment disparates. Le jeu met l'accent sur la logique, l'intuition et la culture générale.
-Structure du Jeu
+    <main class="grad1">
 
-<h3>Le jeu est divisé en quatre manches :</h3>
+        <div class="bigContainer">
+            
+            <section class="containerh1h2">
+                <h1>Format</h1>  
+                
+                <h2>Concept du Jeu</h2>
+                <p>
+                    
+                    "Only Connect" est un quiz télévisé britannique où deux équipes s'affrontent pour identifier des connexions entre des éléments apparemment disparates. Le jeu met l'accent sur la logique, l'intuition et la culture générale.
+                </p>
+                
+            </section>
+            
+            <section class="containerh3">
+                
+                <h3>Structure du Jeu</h3> 
+                
+                <h3>Le jeu est divisé en quatre manches :</h3>
+                
+                <h4>1. Manche 1 - Les connexions</h4>
+                
+                <p>But : Identifier un groupe de quatre éléments liés par un thème commun.
+                    Mécanique : Chaque équipe choisit une question parmi plusieurs catégories. Elle reçoit quatre indices, un par un. L’équipe peut répondre après avoir vu tous les indices ou demander des indices supplémentaires, ce qui leur coûte des points.
+                    Points : Des points sont attribués en fonction de la rapidité et du nombre d'indices demandés.</p>
+                    
+            </section>
+                
+            <section class="containerh3">
+                <h4>2. Manche 2 - Les familles</h4>
+                <p>But : Trouver un groupe de quatre éléments et identifier un cinquième qui les complète.
+                    Mécanique : Les équipes reçoivent une liste de mots. Elles doivent identifier une connexion entre eux et deviner le cinquième élément manquant.
+                    Points : Les points sont attribués pour des réponses correctes, mais des points peuvent être perdus si une équipe se trompe.</p>
+            </section>
+            <section class="containerh3">
+                
+                <h4>3. Manche 3 - Les séries</h4>
+                
+                <p>But : Identifier une série d'éléments et deviner le prochain dans la série.
+                    Mécanique : Les équipes reçoivent des éléments d'une série (comme des nombres, des titres, etc.) et doivent déterminer le modèle ou la logique.
+                    Points : Des points sont attribués pour des réponses correctes, et des pénalités sont appliquées pour des erreurs.
+                </p>
+            </section>
+                        
+            <section class="containerh3">
+                <h4>4. Manche 4 - Le "Connecting Wall"</h4>
+                
+                <p>But : Déchiffrer une grille de 16 mots pour identifier quatre groupes de quatre mots liés.
+                    Mécanique : Les équipes ont un temps limité pour organiser les mots en groupes cohérents et nommer ces groupes.
+                    Points : Des points sont attribués pour chaque groupe correctement identifié.</p>
+            </section>
+            <section class="containerh1h2">
+                <h2>Finale</h2>
+                
+                <p>À la fin des quatre manches, l’équipe avec le plus de points remporte le jeu et peut passer à une autre émission.
+                    Autres Points
+                    
+                    Catégories : Les catégories des questions peuvent varier largement, incluant des thèmes comme la musique, l'histoire, la littérature, etc.</p>
+            </section>  
+        </div> 
+        
+    </main>
 
-<h4>1. Manche 1 - Les connexions</h4>
+      <!-- footer de ma page avec des liens to direct to BBC website etc -->
+      <footer>
 
-    <p>But : Identifier un groupe de quatre éléments liés par un thème commun.
-    Mécanique : Chaque équipe choisit une question parmi plusieurs catégories. Elle reçoit quatre indices, un par un. L’équipe peut répondre après avoir vu tous les indices ou demander des indices supplémentaires, ce qui leur coûte des points.
-    Points : Des points sont attribués en fonction de la rapidité et du nombre d'indices demandés.</p>
+        <a title="Official Website BBC" href="https://www.bbc.co.uk/programmes/b00lskhg"><img class="icon" src="/images/only_connect_logo.jpg" alt="logo jeu Only Connect"/></a>
 
-<h4>2. Manche 2 - Les familles</h4>
+        <a title="Page Wikipedia Only Connect" href="https://en.wikipedia.org/wiki/Only_Connect#"><img class="icon" src="images/Wikipedia_logo.png"/></a>
+       
+        <a title="Only Connect Fan YouTube Channel" href="https://www.youtube.com/@wheelsongenius"><img class="icon" src="images/logo-youtube.png"/></a>
 
-    <p>But : Trouver un groupe de quatre éléments et identifier un cinquième qui les complète.
-    Mécanique : Les équipes reçoivent une liste de mots. Elles doivent identifier une connexion entre eux et deviner le cinquième élément manquant.
-    Points : Les points sont attribués pour des réponses correctes, mais des points peuvent être perdus si une équipe se trompe.</p>
-
-<h4>3. Manche 3 - Les séries</h4>
-
-    But : Identifier une série d'éléments et deviner le prochain dans la série.
-    Mécanique : Les équipes reçoivent des éléments d'une série (comme des nombres, des titres, etc.) et doivent déterminer le modèle ou la logique.
-    Points : Des points sont attribués pour des réponses correctes, et des pénalités sont appliquées pour des erreurs.
-
-4. Manche 4 - Le "Connecting Wall"
-
-    But : Déchiffrer une grille de 16 mots pour identifier quatre groupes de quatre mots liés.
-    Mécanique : Les équipes ont un temps limité pour organiser les mots en groupes cohérents et nommer ces groupes.
-    Points : Des points sont attribués pour chaque groupe correctement identifié.
-
-Finale
-
-À la fin des quatre manches, l’équipe avec le plus de points remporte le jeu et peut passer à une autre émission.
-Autres Points
-
-    Catégories : Les catégories des questions peuvent varier largement, incluant des thèmes comme la musique, l'histoire, la littérature, etc.
+    </footer>
 
 </body>
 </html>
