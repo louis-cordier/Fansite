@@ -1,9 +1,9 @@
 
 :root{
-    --prime: #EFFFFB;
-    --second: #272727;
-    --third: #ffffff;
-    --last: #272727;
+    --prime: #E1C2B8;
+    --second: #5883E3;
+    --third: #CDC0F0;
+    --last: #7388ED;
 }
 
 img{
@@ -71,13 +71,18 @@ nav{
     margin: 5%;
     padding: 5%;
     border-radius: 10px;
+
+    img {
+        width: 275px;
+        height: 275px;
+        border: none;
+        box-shadow: none;
+        align-self: center;
+    }
 }
 
 .titreSousTitre{
     text-align: center;
-    
-    
-    
     
         h1 {
             font-family: 'Untitled Serif';
@@ -86,14 +91,13 @@ nav{
             font-weight: 400;
 
             background-color: var(--second);
-            margin-right: 25%;
-            margin-left: 25%;
 
             border-radius:10px;
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
             text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
+            text-align: center;
 
         }
     
@@ -113,15 +117,6 @@ nav{
     text-align: center;
     margin: 25px;
     font-size: larger;
-
-    
-
-    img {
-        width: 275px;
-        height: 275px;
-        border: none;
-        box-shadow: none;
-    }
 }
 
 .introTexteBis{
@@ -140,7 +135,7 @@ nav{
 
     
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
@@ -202,4 +197,12 @@ nav{
     a:hover{
         color: rgb(85, 85, 234);
     }
+}
+
+@media screen and (min-width:801px) {
+
+   .vignettes {
+    flex-flow: row nowrap;
+   } 
+    
 }
