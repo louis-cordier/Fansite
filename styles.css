@@ -187,7 +187,7 @@ nav{
 
 .footerIndex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding: 20px;
 

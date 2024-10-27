@@ -13,6 +13,7 @@ html,body{
 *{
     /* Pour que les tailles soient correctes */
     box-sizing: border-box;
+
 }
 
 body {
@@ -30,83 +31,152 @@ footer{
     width: 100%;
 }
 
-/* --------------------------------------- */
-/* ------------ Burger Bouton ------------ */
-/* --------------------------------------- */
+h1 {
+
+    font-family: 'Untitled Serif';
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: -5px;
+  
+    @media screen and (min-width:800px) {
+        font-size: 48px;
+        
+    }
+
+    @media screen and (max-width:800px) {
+        font-size: 38px;
+    }
+    
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -5px 35px rgba(255,255,255,0.3);
+
+}
+
+h2 {
+    font-family: 'Untitled Serif';
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: -5px;
+  
+    @media screen and (min-width:800px) {
+        font-size: 38px;
+        
+    }
+
+    @media screen and (max-width:800px) {
+        font-size: 28px;
+    }
+    
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+         0px -5px 35px rgba(255,255,255,0.3);
+
+}
+
+
+/* ------------------------------------------------- */
+/* ------------ Burger Bouton et NavBar ------------ */
+/* ------------------------------------------------- */
 
 #hamburger, #hamburger-logo{
     display: none;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    background: black;
-    overflow: hidden;
-    margin: -10px -10px 0 -10px;
+@media screen and (min-width:800px) {
 
-    /* Pour que les liens soient "rangés" par défaut */
-
-}
-
-nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 20px 20px 20px 20px;
-    text-align: end;
-}
-    
-    .menu {
-        /* Pour que le menu reste en place quand on scroll */
+    nav{
+        display: flex;
+        justify-content: space-around;
         position: fixed;
-        /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
-        width: 0px;
+
+        background-color: black;
+        height: 60px;
+        width: 100%;
+        z-index: 1;
+
+        a{
+            font-size: 26px;
+            margin-top:5px ;
+        }
+
+        a:hover{
+            color: rgb(85, 85, 234);
+        }
     }
-    
-    #hamburger {
-        /* Pour que la checkbox ne s'affiche pas */
-        display: none;
-    }
-    
-    #hamburger-logo {
-        /* Pour que le curseur soit un pointeur */
-        cursor: pointer;
-        background: black;
-        height: 100px;
-        width: 190px;
-        font-size: 60px;
-        display: block;
-        color: white;
-        /* Pour que le menu hamburger s'affiche toujours */
-        text-align: right;
-        /* Pour que le menu hamburger soit "rangé" par défaut */
-        transform: translateX(-115px);
-        padding: 10px;
-    }
-    
+}
+
+@media screen and (max-width:800px) {
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background: black;
         overflow: hidden;
-        font-size: larger;
-        width: 200px;
+        margin: -10px -10px 0 -10px;
+    
         /* Pour que les liens soient "rangés" par défaut */
-        transform: translateX(-200px);
+    
     }
     
-    #hamburger-logo,
-    nav {
-        /* Pour qu'il y ait une animation */
-        transition: 1.2s;
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px 20px 20px 20px;
+        text-align: end;
     }
+        
+        .menu {
+            /* Pour que le menu reste en place quand on scroll */
+            position: fixed;
+            /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+            width: 0px;
+        }
+        
+        #hamburger {
+            /* Pour que la checkbox ne s'affiche pas */
+            display: none;
+        }
+        
+        #hamburger-logo {
+            /* Pour que le curseur soit un pointeur */
+            cursor: pointer;
+            background: black;
+            height: 100px;
+            width: 190px;
+            font-size: 60px;
+            display: block;
+            color: white;
+            /* Pour que le menu hamburger s'affiche toujours */
+            text-align: right;
+            /* Pour que le menu hamburger soit "rangé" par défaut */
+            transform: translateX(-115px);
+            padding: 10px;
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: column;
+            background: black;
+            overflow: hidden;
+            font-size: larger;
+            width: 200px;
+            /* Pour que les liens soient "rangés" par défaut */
+            transform: translateX(-200px);
+        }
+        
+        #hamburger-logo,
+        nav {
+            /* Pour qu'il y ait une animation */
+            transition: 1.2s;
+        }
+        
+        /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+        #hamburger:checked ~ #hamburger-logo,
+        #hamburger:checked ~ nav {
+            /* Changement de la position pour afficher les menus */
+            transform: translate(0);
+        }
     
-    /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
-    #hamburger:checked ~ #hamburger-logo,
-    #hamburger:checked ~ nav {
-        /* Changement de la position pour afficher les menus */
-        transform: translate(0);
-    }
+}
+
     
     nav a {
         color: white;
@@ -129,7 +199,9 @@ nav a {
     background-color:var(--couleurPrime);
     margin: 5% 5% 5% 5%;
     padding: 20px;
-    border: solid black;
+
+
+    box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(29, 29, 29, 0.5) -3px -3px 6px 1px inset;
 }
 
 /*container de titre,texte et image */
@@ -142,69 +214,138 @@ nav a {
 
     h1, h2{
         text-align: center;
-        font-weight: 900;
     }
 
     img{
         width: 40%;
         height: 40%;
         align-self: center;
-        margin: 20px 0 20px 0;
-        border: solid black;
+        margin: 30px 0 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
         @media (min-width:1080px) {
-            width: 25%;
-            height:25%;
+            width: 30%;
+            height:30%;
             
         }
 
     }
+
+    p{
+        
+
+        @media screen and (min-width:800px) {
+
+            font-size: larger;
+            margin-right:20%;
+            margin-left: 20%;
+            
+        }
+
+        @media screen and (max-width:800px) {
+
+            text-align: center;
+            font-size: larger;
+
+            
+        }
+    }
+
 
 }
 
 .containerListe li{
     list-style: none;
     margin-top: 5px;
+
+
+
+        @media screen and (min-width:800px) {
+
+            font-size: larger;
+            margin-right:20%;
+            margin-left: 20%;
+            
+        }
+
+        @media screen and (max-width:800px) {
+
+            font-size: larger;
+
+            
+        }
 }
 
 
 /* mosaique d'image */
 
-.mosaiqueImages{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
 
-    .mosaiqueImagesLine{
+
+
+@media screen and (max-width:800px) {
+
+    .mosaiqueImages{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-
-    }
-
-        img{
-            
-            width: 120px;
-            height: 120px;
-            margin: 5px;
+        flex-flow: column wrap;
+        align-items: center;
+    
+        .mosaiqueImagesLine{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+    
+        }
+    
+            img{
                 
-            
-        }
-
-        img:hover{
-            transition: 800ms;
-            width: 150px;
-            height: 150px;
-        }
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                               
+            }    
     }
+    
+    
+}
 
+@media screen and (min-width:800px) {
+
+    .mosaiqueImages{
+        
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+
+    
+        .mosaiqueImagesLine{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+    
+        }
+    
+            img{
+                
+                width: 300px;
+                height: 300pxpx;
+                margin: 10px;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                               
+            }    
+    }
+    
+    
+}
     
 /*Video Youtube */
 
     .videoContainer{
 
-        display: flex;
-        flex-flow: column nowrap;
+        margin-top: 20px;
 
 
         position: relative;
@@ -240,13 +381,34 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
     
 }
 
-.icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 35%;
-    margin:20px 0 20px 0;
-}
+
+@media screen and (max-width:800px) {
+
+    .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 35%;
+        margin:20px 0 20px 0;
+    }     
     
+}
+
+@media screen and (min-width:800px) {
+
+    .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 35%;
+        margin:20px 0 20px 0;
+    }     
+    
+}
+
